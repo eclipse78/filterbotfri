@@ -5,7 +5,7 @@
 class script(object):
     START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
     
-I am an advanced auto filter bot for @Webseries_Wrld</b>\n<b>Just type the name of the file you need, i can only forward the file you requested if its in my database</b>"""
+I am an advanced auto filter bot for @Webseries_Wrld</b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
@@ -19,7 +19,7 @@ hmm..?"""
 ‣ My Name : <a href=https://t.me/{}>{}</a>
 ‣ Admin : <a href='tg://settings'>Yours Truly</a> 
 ‣ Channel : <a href='t.me/webseries_wrld'>Webseries Wrld</a> 
-‣ Group : <a href='t.me/webseries_wrld_chat'>Webserries Wrld Group</a>  
+‣ Group : <a href='t.me/webseries_wrld_chat'>Group</a>  
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
 ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a></b>"""
@@ -245,8 +245,8 @@ No Results
 
     CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}</b>
 
-<b>‣ Channel : <a href='t.me/webseries_wrld'>Webseries Wrld</a></b>
-<b>‣  sɪᴢᴇ : {file_size}</b>""" 
+<b>•  sɪᴢᴇ : {file_size}
+<b>• ᴄʜᴀɴɴᴇʟ : <a href='t.me/webseries_wrld'>Webseries Wrld</a></b></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
