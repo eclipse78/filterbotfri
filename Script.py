@@ -5,7 +5,7 @@
 class script(object):
     START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
     
-I am an advanced auto filter bot for @Webseries_Wrld</b>"""
+ɪ ᴀᴍ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ꜰᴏʀ <a href='t.me/webseries_wrld'>ᴡᴇʙꜱᴇʀɪᴇꜱ ᴡʀʟᴅ</a></b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
@@ -261,9 +261,10 @@ IMDb Data:
 📀 RunTime: {runtime} Minutes
 📆 Release Info : {release_date}
 🎛 Countries : <code>{countries}</code>
+<b>• Channel : <a href='t.me/webseries_wrld'>Webseries Wrld</a></b></b>
 
 
-⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
+⏰Result Shown in: {remaining_seconds} <i>seconds</i>
 
 Requested by : {message.from_user.mention}</b>"""
     
