@@ -49,29 +49,17 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == False:
             buttons = [[
-                InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-                InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
-            ],[
-                InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('Update Channel', url=f'http://t.me/webseries_wrld'),
+                InlineKeyboardButton('Group', url=f'http://t.me/webseries_wrld_chat')
             ]]
         else:
             buttons = [[
                 InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('Channel', url=f'http://t.me/Webseries_Wrld'),
-                InlineKeyboardButton('Group', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('Help', callback_data='help'),
-                InlineKeyboardButton('About', callback_data='about')
-            ],[
-                InlineKeyboardButton('Update Channel', url=CHNL_LNK)
+                InlineKeyboardButton('Group', url=f'http://t.me/webseries_wrld_chat')
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
@@ -152,12 +140,7 @@ async def start(client, message):
                 InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('Channel', url=f'http://t.me/Webseries_Wrld'),
-                InlineKeyboardButton('Group', url=GRP_LNK)
-            ],[
-                InlineKeyboardButton('Help', callback_data='help'),
-                InlineKeyboardButton('About', callback_data='about')
-            ],[
-                InlineKeyboardButton('Update Channel', url=CHNL_LNK)
+                InlineKeyboardButton('Group', url=f'http://t.me/webseries_wrld_chat')
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
