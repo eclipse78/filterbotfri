@@ -552,7 +552,7 @@ async def start(client, message):
             k = await msg.reply(text=f"<blockquote><b><u>❗️Note </u></b>\n• <i><b>Save these files to the your saved messages or to any other private chat, Files in this chat will be automatically deleted after 10 minutes</i></b></blockquote>")
             await asyncio.sleep(600)
             await msg.delete()
-            await k.edit_text("<b>Files in this chat has been successfully deleted</b>\n<b>If you still haven't forwarded the files to your saved messages, then click the button below to get the files again</b>",reply_markup=InlineKeyboardMarkup(btn))
+            await k.edit_text("<b>Files in this chat has been successfully deleted</b>\n<b>If you still haven't forwarded the files to your saved messages, then click the button below</b>",reply_markup=InlineKeyboardMarkup(btn))
             return
         except:
             pass
@@ -600,7 +600,7 @@ async def start(client, message):
     k = await msg.reply(text=f"<blockquote><b><u>❗️Note </u></b>\n• <i><b>Save these files to the your saved messages or to any other private chat, Files in this chat will be automatically deleted after 10 minutes</i></b></blockquote>")
     await asyncio.sleep(600)
     await msg.delete()
-    await k.edit_text("<b>Files in this chat has been successfully deleted</b>\n<b>If you still haven't forwarded the files to your saved messages, then click the button below to get the files again</b>",reply_markup=InlineKeyboardMarkup(btn))
+    await k.edit_text("<b>Files in this chat has been successfully deleted</b>\n<b>If you still haven't forwarded the files to your saved messages, then click the button below</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
