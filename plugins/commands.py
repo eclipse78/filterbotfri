@@ -30,8 +30,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('Channel', url=f'https://t.me/webseries_wrld'),
-            InlineKeyboardButton('Group', url=f'https://t.me/webseries_wrld_chat')
+            InlineKeyboardButton('ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/AnimeXWrld'),
+            InlineKeyboardButton('ᴡᴇʙꜱᴇʀɪᴇꜱ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/Webseries_Wrld')
+        ],[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/Webseries_Wrld_Chat')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -47,22 +49,26 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == False:
             buttons = [[
-                InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('Update Channel', url=f'http://t.me/webseries_wrld'),
-                InlineKeyboardButton('Group', url=f'http://t.me/webseries_wrld_chat')
-            ]]
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ],[
+            InlineKeyboardButton('ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/AnimeXWrld'),
+            InlineKeyboardButton('ᴡᴇʙꜱᴇʀɪᴇꜱ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/Webseries_Wrld')
+        ],[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/Webseries_Wrld_Chat')
+        ]]
         else:
             buttons = [[
-                InlineKeyboardButton('Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-                InlineKeyboardButton('Channel', url=f'http://t.me/Webseries_Wrld'),
-                InlineKeyboardButton('Group', url=f'http://t.me/webseries_wrld_chat')
-            ]]
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ],[
+            InlineKeyboardButton('ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/AnimeXWrld'),
+            InlineKeyboardButton('ᴡᴇʙꜱᴇʀɪᴇꜱ ᴄʜᴀɴɴᴇʟ', url=f'https://t.me/Webseries_Wrld')
+        ],[
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url=f'https://t.me/Webseries_Wrld_Chat')
+        ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAICB2eeT9u2gkNxI9FKoM0GuaZMuS5wAAL5BgACathJVDHDY5nXgyRJHgQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -198,7 +204,7 @@ async def start(client, message):
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('ᴄʀᴇᴀᴛᴇ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')])
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+            m=await message.reply_sticker("CAACAgUAAxkBAAICB2eeT9u2gkNxI9FKoM0GuaZMuS5wAAL5BgACathJVDHDY5nXgyRJHgQ") 
             await asyncio.sleep(1)
             await m.delete()
             await message.reply_photo(
@@ -1368,7 +1374,7 @@ async def check_plans_cmd(client, message):
             [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
+        m=await message.reply_sticker("CAACAgUAAxkBAAICB2eeT9u2gkNxI9FKoM0GuaZMuS5wAAL5BgACathJVDHDY5nXgyRJHgQ")         
         await message.reply_text(f"**😢 You Don't Have Any Premium Subscription.\n\n Check Out Our Premium /plan**",reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()
