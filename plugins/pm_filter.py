@@ -125,7 +125,7 @@ async def next_page(bot, query):
             InlineKeyboardButton("Send All", callback_data=f"sendfiles#{key}")
             ],[
             InlineKeyboardButton("Anime Channel", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("Webseries Channel", url=f'https://t.me/webseries_wrld'))
+            InlineKeyboardButton("Webseries Channel", url=f'https://t.me/webseries_wrld')
         ])
     else:
         btn = []
@@ -134,7 +134,7 @@ async def next_page(bot, query):
             InlineKeyboardButton("Send All", callback_data=f"sendfiles#{key}")
             ],[
             InlineKeyboardButton("Anime Channel", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("Webseries Channel", url=f'https://t.me/webseries_wrld'))
+            InlineKeyboardButton("Webseries Channel", url=f'https://t.me/webseries_wrld')
         ])
     try:
         if settings['max_btn']:
