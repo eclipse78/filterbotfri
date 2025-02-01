@@ -10,14 +10,14 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', 'autofillbot')
 API_ID = int(environ.get('API_ID', '7713526'))
 API_HASH = environ.get('API_HASH', '6f87b351ddf6c8c56999f8ba5b19cc7c')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6944565115:AAGVYjXbCp4cIF6LfG_smbHWEu3qzP1CYng")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7720334854:AAGDY451qwrDXoDYG96xlpywwbZslLRkcIQ")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/3bbe723bfb9ae99dd2cb9-efddc88d9f0149d308.jpg https://graph.org/file/ae59ac4caf22af9bb2d30-8ff96d1b3d5f636d70.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/3bbe723bfb9ae99dd2cb9-efddc88d9f0149d308.jpg https://graph.org/file/ae59ac4caf22af9bb2d30-8ff96d1b3d5f636d70.jpg https://graph.org/file/3a2e44390819d680d6595-c9724fe3faeb286c0f.jpg https://graph.org/file/7e276bd88ece9d77fb3cf-398dcdbe285e0545d6.jpg https://graph.org/file/08895d73dd09fc6510f20-51c4e383dcc5071def.jpg https://graph.org/file/792700a8ca21405592361-933631410abb38f22f.jpg https://graph.org/file/4733f61500cb3f135a2b5-5b273fe1296f60e7a7.jpg')).split()
 
 
 # Admins & Users
@@ -26,10 +26,10 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001580437794'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002341642469'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1927336862 1764676038').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001927336862 -1001764676038').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -72,7 +72,7 @@ S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When F
 
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/webseries_wrld_chat')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/webseries_wrld')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ANIMEXWRLD') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/webseries_wrld')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -178,7 +178,7 @@ AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', False)) # Set True or 
 
 
 # Start Command Reactions
-REACTIONS = ["✨",  "⛩️", "🔥", "🧙‍♂️", "🦄", "🆒", "💀"] #don't add any emoji because tg not support all emoji reactions
+REACTIONS = ["✨",  "⛩️", "📺", "🧙‍♂️", "🕊️", "💸", "💀", "🛌", "🧙"] #don't add any emoji because tg not support all emoji reactions
 
 
 if MULTIPLE_DATABASE == False:
