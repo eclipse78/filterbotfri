@@ -122,19 +122,29 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-            InlineKeyboardButton("Send All", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("Anime Channel", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("Webseries Channel", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     try:
         if settings['max_btn']:
@@ -349,19 +359,29 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
 
     if offset != "":
@@ -661,19 +681,29 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
 
     if offset != "":
@@ -846,20 +876,30 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-        bbtn.insert(0, 
+        btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     if lang != "homepage":
         req = query.from_user.id
@@ -975,19 +1015,29 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
+                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+            ]
+        )
+        btn.insert(0, [
+            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
 
     if offset != "":
