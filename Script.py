@@ -19,10 +19,10 @@ hmm..?"""
 ‣ My Name : <a href=https://t.me/{}>{}</a>
 ‣ Admin : <a href='tg://settings'>Yours Truly</a> 
 ‣ Channel : <a href='t.me/webseries_wrld'>Webseries Wrld</a> 
-‣ Group : <a href='t.me/webseries_wrld_chat'>Webseries Wrld</a>  
+‣ Group : <a href='t.me/webseries_wrld_chat'>Webserries Wrld Group</a>  
 ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
-‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>"""
+‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a></b>"""
 
     CLONE_ABOUT_TXT = """<b><blockquote>⍟───[ ᴍʏ ᴀʙᴏᴜᴛ ]───⍟</blockquote>
     
@@ -243,9 +243,10 @@ No Results
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}</b>
 
-<b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
+<b>‣ Channel : <a href='t.me/webseries_wrld'>Webseries Wrld</a></b>
+<b>‣  sɪᴢᴇ : {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
