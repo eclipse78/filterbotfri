@@ -2593,19 +2593,13 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         ]
         btn.insert(0, 
             [
+                InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
+                InlineKeyboardButton(f'𝐐𝐮𝐚𝐥𝐢𝐭𝐲', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
+            ]
+        )
+        btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
-        ])
-    else:
-        btn = []
-        btn.insert(0, 
-            [
-            InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}")
-            ],[
-            InlineKeyboardButton("𝐀𝐧𝐢𝐦𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/AnimeXWrld'),
-            InlineKeyboardButton("𝐖𝐞𝐛𝐬𝐞𝐫𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f'https://t.me/webseries_wrld')
         ])
     if offset != "":
         try:
