@@ -13,7 +13,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'autofillbot')
 API_ID = int(environ.get('API_ID', '7713526'))
 API_HASH = environ.get('API_HASH', '6f87b351ddf6c8c56999f8ba5b19cc7c')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7720334854:AAGDY451qwrDXoDYG96xlpywwbZslLRkcIQ")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7720334854:AAGbnaXO55iLoI3CwEyMe-Czpp8C9v7BMe0")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -94,12 +94,12 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ANIMEXWRLD') # Support Chat Link Wit
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/webseries_wrld')
 
 # True Or False
-AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
+AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', False))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 BUTTON_MODE = bool(environ.get('BUTTON_MODE', True))
 MAX_BTN = bool(environ.get('MAX_BTN', True))
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
-IMDB = bool(environ.get('IMDB', True))
+IMDB = bool(environ.get('IMDB', False))
 AUTO_FFILTER = bool(environ.get('AUTO_FFILTER', True))
 AUTO_DELETE = bool(environ.get('AUTO_DELETE', True))
 LONG_IMDB_DESCRIPTION = bool(environ.get("LONG_IMDB_DESCRIPTION", False))
